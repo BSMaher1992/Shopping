@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Generics | Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="store.js" async></script>
+</head>
+<body>
+    <header class="main-header">
+     v>
+        <h1 class="band-name band-name-large">Shopping</h1>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">T-Shirt</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="Images/Album 1.jpg">
+                <div class="price">
+                 <span class="shop-item-price">12.99 DT</span>
+             </div>
+                <div class="shop-item-details">
+                   
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="Images/Album 2.jpg">
+                <div class="price">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">14.99 DT</span>
+                </div>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 3</span>
+                <img class="shop-item-image" src="Images/Album 3.jpg">
+                 <div class="price">
+                <div class="shop-item-details">
+                                       
+
+                    <span class="shop-item-price">9.99 DT</span>
+                </div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 4</span>
+                <img class="shop-item-image" src="Images/Album 4.jpg">
+                <div class="price">
+                <div class="shop-item-details">
+                                        
+                    <span class="shop-item-price">19.99 DT</span>
+                </div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">Shoes</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="Images/Album 5.jpg">
+                 <div class="price">
+                <div class="shop-item-details">                                 
+                    <span class="shop-item-price">120.99 DT</span>
+                </div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="Images/Album 6.jpg">
+                <div class="price">
+                <div class="shop-item-details">                    
+                <span class="shop-item-price">60.99 DT</span>
+                </div>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0 DT</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <div class="cont">
+        <button id="likebtn">
+            <i class="fa fa-thumbs-up"></i>
+        </button>
+        <input type="number" id="input1" value="0" name="">
+        <button id="dislikebtn">
+            <i class="fa fa-thumbs-down"></i>
+        </button>
+        <input type="number" id="input2" value="0" name="">
+    </div>
+    <script type="text/javascript">
+    let likebtn=document.querySelector('#likebtn');
+    let dislikebtn=document.querySelector('#dislikebtn');
+
+    let input1=document.querySelector('#input1');
+    let input2=document.querySelector('#input2');
+
+    likebtn.addEventListener('click',()=>{
+        input1.value=parseInt(input1.value)+1;
+        input1.style.color="#12ff00";
+    })
+     dislikebtn.addEventListener('click',()=>{
+        input2.value=parseInt(input2.value)+1;
+        input2.style.color="#ff0000";
+    })
+    </script>
+
+</body>
+</html>
